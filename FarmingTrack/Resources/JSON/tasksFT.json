@@ -1,0 +1,617 @@
+[
+    {
+        "id": "t001",
+        "title": "Prepare Soil for Planting",
+        "description": "Get your field ready for the new season.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Clear Debris",
+                "description": "Remove rocks and old plant matter."
+            },
+            {
+                "id": "s2",
+                "title": "Test Soil",
+                "description": "Take samples for pH analysis."
+            },
+            {
+                "id": "s3",
+                "title": "Add Compost",
+                "description": "Spread organic matter evenly."
+            },
+            {
+                "id": "s4",
+                "title": "Till Soil",
+                "description": "Turn the soil to aerate it."
+            },
+            {
+                "id": "s5",
+                "title": "Rake Level",
+                "description": "Create a smooth seedbed."
+            },
+            {
+                "id": "s6",
+                "title": "Water Lightly",
+                "description": "Moisten soil before planting."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 150,
+        "imageName": "soil_prep",
+        "category": "Crops"
+    },
+    {
+        "id": "t002",
+        "title": "Scout for Aphids",
+        "description": "Inspect crops for early signs of pests.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Walk the Rows",
+                "description": "Walk through the field slowly."
+            },
+            {
+                "id": "s2",
+                "title": "Check Undersides",
+                "description": "Look under leaves for bugs."
+            },
+            {
+                "id": "s3",
+                "title": "Identify Pests",
+                "description": "Confirm if they are aphids."
+            },
+            {
+                "id": "s4",
+                "title": "Count Density",
+                "description": "Estimate infestation level."
+            },
+            {
+                "id": "s5",
+                "title": "Check Natural Enemies",
+                "description": "Look for ladybugs."
+            },
+            {
+                "id": "s6",
+                "title": "Record Findings",
+                "description": "Log data in journal."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 100,
+        "imageName": "scout_aphids",
+        "category": "Crops"
+    },
+    {
+        "id": "t003",
+        "title": "Harvest Corn",
+        "description": "Collect the mature corn crop.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Check Maturity",
+                "description": "Ensure kernels are dented."
+            },
+            {
+                "id": "s2",
+                "title": "Prepare Combine",
+                "description": "Check settings and fuel."
+            },
+            {
+                "id": "s3",
+                "title": "Align Rows",
+                "description": "Line up headers with crop rows."
+            },
+            {
+                "id": "s4",
+                "title": "Harvest Field",
+                "description": "Drive at steady speed."
+            },
+            {
+                "id": "s5",
+                "title": "Check Grain Tank",
+                "description": "Monitor fill level."
+            },
+            {
+                "id": "s6",
+                "title": "Unload Grain",
+                "description": "Transfer to truck or wagon."
+            }
+        ],
+        "difficulty": "Hard",
+        "rewardPoints": 300,
+        "imageName": "harvest_corn",
+        "category": "Crops"
+    },
+    {
+        "id": "t004",
+        "title": "Clean Chicken Coop",
+        "description": "Weekly sanitation for the flock.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Remove Chickens",
+                "description": "Let them roam outside."
+            },
+            {
+                "id": "s2",
+                "title": "Remove Bedding",
+                "description": "Shovel out old straw."
+            },
+            {
+                "id": "s3",
+                "title": "Scrape Roosts",
+                "description": "Clean poop off bars."
+            },
+            {
+                "id": "s4",
+                "title": "Dust for Mites",
+                "description": "Apply diatomaceous earth."
+            },
+            {
+                "id": "s5",
+                "title": "Add Fresh Bedding",
+                "description": "Spread new wood shavings."
+            },
+            {
+                "id": "s6",
+                "title": "Refill Water",
+                "description": "Clean and fill drinkers."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 120,
+        "imageName": "clean_coop",
+        "category": "Livestock"
+    },
+    {
+        "id": "t005",
+        "title": "Inspect Cattle Fence",
+        "description": "Ensure the perimeter is secure.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Walk Perimeter",
+                "description": "Investigate the fence line."
+            },
+            {
+                "id": "s2",
+                "title": "Check Posts",
+                "description": "Wiggle posts for stability."
+            },
+            {
+                "id": "s3",
+                "title": "Test Voltage",
+                "description": "Use tester on electric wire."
+            },
+            {
+                "id": "s4",
+                "title": "Clear Brush",
+                "description": "Remove weeds touching wire."
+            },
+            {
+                "id": "s5",
+                "title": "Repair Breaks",
+                "description": "Splice broken wires."
+            },
+            {
+                "id": "s6",
+                "title": "Verify Gate",
+                "description": "Ensure latches work."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 100,
+        "imageName": "fence_inspect",
+        "category": "Livestock"
+    },
+    {
+        "id": "t006",
+        "title": "Feed the Pigs",
+        "description": "Daily feeding routine.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Check Troughs",
+                "description": "Clean out old food."
+            },
+            {
+                "id": "s2",
+                "title": "Measure Feed",
+                "description": "Scoop correct ration."
+            },
+            {
+                "id": "s3",
+                "title": "Distribute Feed",
+                "description": "Pour into troughs evenly."
+            },
+            {
+                "id": "s4",
+                "title": "Check Waterers",
+                "description": "Ensure flow is good."
+            },
+            {
+                "id": "s5",
+                "title": "Observe Health",
+                "description": "Watch pigs eat."
+            },
+            {
+                "id": "s6",
+                "title": "Store Feed",
+                "description": "Secure container lid."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 80,
+        "imageName": "feed_pigs",
+        "category": "Livestock"
+    },
+    {
+        "id": "t007",
+        "title": "Change Tractor Oil",
+        "description": "Routine engine maintenance.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Warm Engine",
+                "description": "Run for 5 mins."
+            },
+            {
+                "id": "s2",
+                "title": "Place Pan",
+                "description": "Put catch pan under plug."
+            },
+            {
+                "id": "s3",
+                "title": "Drain Oil",
+                "description": "Remove plug and drain."
+            },
+            {
+                "id": "s4",
+                "title": "Replace Filter",
+                "description": "Unscrew old, put new."
+            },
+            {
+                "id": "s5",
+                "title": "Add New Oil",
+                "description": "Pour in specific grade."
+            },
+            {
+                "id": "s6",
+                "title": "Check Level",
+                "description": "Use dipstick to verify."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 200,
+        "imageName": "oil_change",
+        "category": "Machinery"
+    },
+    {
+        "id": "t008",
+        "title": "Sharpen Mower Blades",
+        "description": "Keep cuts clean and efficient.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Disconnect Spark",
+                "description": "Ensure safety first."
+            },
+            {
+                "id": "s2",
+                "title": "Remove Deck",
+                "description": "Access the blades."
+            },
+            {
+                "id": "s3",
+                "title": "Unbolt Blades",
+                "description": "Use impact wrench."
+            },
+            {
+                "id": "s4",
+                "title": "Grind Edge",
+                "description": "Sharpen to 30 degrees."
+            },
+            {
+                "id": "s5",
+                "title": "Balance Blade",
+                "description": "Check weight distribution."
+            },
+            {
+                "id": "s6",
+                "title": "Reinstall",
+                "description": "Torque bolts to spec."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 150,
+        "imageName": "sharpen_blades",
+        "category": "Machinery"
+    },
+    {
+        "id": "t009",
+        "title": "Calibrate Sprayer",
+        "description": "Ensure accurate chemical application.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Clean Nozzles",
+                "description": "Remove clogs."
+            },
+            {
+                "id": "s2",
+                "title": "Fill Tank",
+                "description": "Use clean water."
+            },
+            {
+                "id": "s3",
+                "title": "Set Pressure",
+                "description": "Adjust regulator."
+            },
+            {
+                "id": "s4",
+                "title": "Measure Output",
+                "description": "Collect spray for 1 min."
+            },
+            {
+                "id": "s5",
+                "title": "Calculate Rate",
+                "description": "Math out gallons/acre."
+            },
+            {
+                "id": "s6",
+                "title": "Adjust Speed",
+                "description": "Match speed to rate."
+            }
+        ],
+        "difficulty": "Hard",
+        "rewardPoints": 250,
+        "imageName": "calibrate_sprayer",
+        "category": "Machinery"
+    },
+    {
+        "id": "t010",
+        "title": "Repair Irrigation Line",
+        "description": "Fix a leak in the drip tape.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Locate Leak",
+                "description": "Walk the line while on."
+            },
+            {
+                "id": "s2",
+                "title": "Cut Line",
+                "description": "Cut out damaged section."
+            },
+            {
+                "id": "s3",
+                "title": "Insert Coupler",
+                "description": "Slide connector in."
+            },
+            {
+                "id": "s4",
+                "title": "Tighten Rings",
+                "description": "Secure the connection."
+            },
+            {
+                "id": "s5",
+                "title": "Flush Line",
+                "description": "Run water to clear dirt."
+            },
+            {
+                "id": "s6",
+                "title": "Cap End",
+                "description": "Close the system."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 140,
+        "imageName": "repair_irrigation",
+        "category": "Water"
+    },
+    {
+        "id": "t011",
+        "title": "Clean Water Troughs",
+        "description": "Keep livestock water fresh.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Empty Trough",
+                "description": "Open drain plug."
+            },
+            {
+                "id": "s2",
+                "title": "Scrub Algae",
+                "description": "Use stiff brush."
+            },
+            {
+                "id": "s3",
+                "title": "Rinse",
+                "description": "Spray with hose."
+            },
+            {
+                "id": "s4",
+                "title": "Bleach Clean",
+                "description": "Mild bleach solution."
+            },
+            {
+                "id": "s5",
+                "title": "Final Rinse",
+                "description": "Remove all bleach."
+            },
+            {
+                "id": "s6",
+                "title": "Refill",
+                "description": "Fill with fresh water."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 90,
+        "imageName": "clean_trough",
+        "category": "Water"
+    },
+    {
+        "id": "t012",
+        "title": "Install Rain Barrel",
+        "description": "Set up water catchment.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Level Ground",
+                "description": "Prepare base."
+            },
+            {
+                "id": "s2",
+                "title": "Place Blocks",
+                "description": "Elevate barrel."
+            },
+            {
+                "id": "s3",
+                "title": "Cut Downspout",
+                "description": "Measure and saw."
+            },
+            {
+                "id": "s4",
+                "title": "Install Diverter",
+                "description": "Connect to spout."
+            },
+            {
+                "id": "s5",
+                "title": "Connect Hose",
+                "description": "Link diverter to barrel."
+            },
+            {
+                "id": "s6",
+                "title": "Test Flow",
+                "description": "Pour water to test."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 160,
+        "imageName": "rain_barrel",
+        "category": "Water"
+    },
+    {
+        "id": "t013",
+        "title": "Start Compost Pile",
+        "description": "Turn waste into fertilizer.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Choose Site",
+                "description": "Select shady spot."
+            },
+            {
+                "id": "s2",
+                "title": "Add Browns",
+                "description": "Layer of leaves/straw."
+            },
+            {
+                "id": "s3",
+                "title": "Add Greens",
+                "description": "Kitchen scraps/grass."
+            },
+            {
+                "id": "s4",
+                "title": "Add Soil",
+                "description": "Introduce microbes."
+            },
+            {
+                "id": "s5",
+                "title": "Moisten",
+                "description": "Water like sponge."
+            },
+            {
+                "id": "s6",
+                "title": "Turn Pile",
+                "description": "Aerate with fork."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 110,
+        "imageName": "compost_pile",
+        "category": "Techniques"
+    },
+    {
+        "id": "t014",
+        "title": "Plant Cover Crops",
+        "description": "Protect soil in winter.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Select Seed",
+                "description": "Rye or clover."
+            },
+            {
+                "id": "s2",
+                "title": "Prepare Bed",
+                "description": "Lightly till surface."
+            },
+            {
+                "id": "s3",
+                "title": "Broadcast Seed",
+                "description": "Spread evenly."
+            },
+            {
+                "id": "s4",
+                "title": "Rake In",
+                "description": "Ensure soil contact."
+            },
+            {
+                "id": "s5",
+                "title": "Water",
+                "description": "Initiate germination."
+            },
+            {
+                "id": "s6",
+                "title": "Monitor Growth",
+                "description": "Check establishment."
+            }
+        ],
+        "difficulty": "Medium",
+        "rewardPoints": 130,
+        "imageName": "cover_crops",
+        "category": "Techniques"
+    },
+    {
+        "id": "t015",
+        "title": "Mulch Garden Beds",
+        "description": "Suppress weeds and save water.",
+        "steps": [
+            {
+                "id": "s1",
+                "title": "Weed Area",
+                "description": "Remove existing weeds."
+            },
+            {
+                "id": "s2",
+                "title": "Water Soil",
+                "description": "Hydrate ground first."
+            },
+            {
+                "id": "s3",
+                "title": "Select Mulch",
+                "description": "Straw or chips."
+            },
+            {
+                "id": "s4",
+                "title": "Spread Layer",
+                "description": "Apply 3 inches thick."
+            },
+            {
+                "id": "s5",
+                "title": "Clear Stems",
+                "description": "Pull away from stalks."
+            },
+            {
+                "id": "s6",
+                "title": "Water Again",
+                "description": "Settle the mulch."
+            }
+        ],
+        "difficulty": "Easy",
+        "rewardPoints": 90,
+        "imageName": "mulch_garden",
+        "category": "Techniques"
+    }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "a001",
+    "title": "Maximize Your Crop Yield",
+    "subtitle": "Essential tips for soil preparation and planting.",
+    "content": "Achieving a high crop yield starts long before the first seed is planted. It begins with understanding your soil.\n\nStart by conducting a thorough soil analysis. This will tell you the pH level and nutrient content, allowing you to amend the soil correctly. Adding organic matter like compost can improve soil structure and water retention.\n\nChoose the right crop varieties for your climate. Local extension offices often have lists of recommended varieties that perform well in your specific area. Don't simply plant what looks good; plant what grows well.\n\nProper spacing is also critical. Overcrowding plants leads to competition for sunlight, water, and nutrients, resulting in smaller yields and higher disease susceptibility. Follow the recommended spacing on seed packets or extension guides.",
+    "imageName": "crop_yield",
+    "category": "Crops",
+    "readTimeMinutes": 5
+  },
+  {
+    "id": "a002",
+    "title": "Understanding Soil pH",
+    "subtitle": "Why acidity matters for your plants.",
+    "content": "Soil pH is a measure of the acidity or alkalinity of your soil. It is measured on a scale of 0 to 14, with 7 being neutral. Most crops prefer a slightly acidic soil with a pH between 6.0 and 7.0.\n\nWhy does it matter? Soil pH affects nutrient availability. Even if your soil is rich in nutrients, plants cannot access them if the pH is off. For example, in highly acidic soil, nutrients like phosphorus become unavailable, while toxic elements like aluminum can become more soluble.\n\nTo correct acidic soil (low pH), farmers often add lime. To correct alkaline soil (high pH), sulfur is commonly used. Regular testing is key, as pH can change over time due to weather, crop removal, and fertilizer application.",
+    "imageName": "soil_ph",
+    "category": "Crops",
+    "readTimeMinutes": 4
+  },
+  {
+    "id": "a003",
+    "title": "Pest Control Basics",
+    "subtitle": "Identifying and managing field pests.",
+    "content": "Integrated Pest Management (IPM) is the gold standard for modern farming. It's not just about nuking bugs with chemicals; it's about using a combination of techniques to keep pest populations below economic injury levels.\n\nFirst, regular scouting is essential. You can't fight what you don't see. Walk your fields weekly and look for signs of damage or the pests themselves.\n\nSecond, use cultural controls. Crop rotation disrupts pest life cycles. Planting trap crops can lure pests away from your main cash crop.\n\nThird, biological controls involve encouraging natural predators like ladybugs and lacewings. Avoiding broad-spectrum insecticides helps keep these beneficial insects alive.",
+    "imageName": "pest_control",
+    "category": "Crops",
+    "readTimeMinutes": 6
+  },
+  {
+    "id": "a004",
+    "title": "Cattle Health Signs",
+    "subtitle": "What to look for in a healthy herd.",
+    "content": "A healthy herd is a profitable herd. Early detection of illness can save you thousands in vet bills and lost productivity.\n\nLook for bright eyes and alert ears. A cow that isolates itself from the herd is often a sign of trouble. Check for smooth, shiny coats; rough hair can indicate parasites or nutritional deficiencies.\n\nMonitor eating and drinking habits. A sudden drop in feed intake is a red flag. Also, observe their movement; lameness is a major issue in cattle and should be addressed immediately effectively.",
+    "imageName": "cattle_health",
+    "category": "Livestock",
+    "readTimeMinutes": 5
+  },
+  {
+    "id": "a005",
+    "title": "Chicken Coop Maintenance",
+    "subtitle": "Keeping your flock happy and productive.",
+    "content": "A clean coop is essential for preventing disease and ensuring high egg production. Ammonia buildup from droppings can cause respiratory issues in chickens, so ventilation is key.\n\nClean the coop regularly, removing wet bedding and replacing it with fresh, dry material. Pine shavings or straw work well. Ensure nest boxes are clean and inviting to encourage laying.\n\nCheck for predators. Raccoons, foxes, and weasels are crafty. Ensure your coop is secure with hardware cloth, not just chicken wire, which predators can tear through.",
+    "imageName": "chicken_coop",
+    "category": "Livestock",
+    "readTimeMinutes": 4
+  },
+  {
+    "id": "a006",
+    "title": "Sheep Shearing Guide",
+    "subtitle": "Best practices for wool harvesting.",
+    "content": "Shearing is necessary for sheep welfare, preventing overheating and flystrike. It is typically done once a year, usually in the spring before the weather gets too hot.\n\nPreparation is crucial. Keep sheep off feed for 12 hours before shearing to make them more comfortable and easier to handle. Ensure the shearing area is clean and dry to keep the wool high quality.\n\nUse sharp equipment. Dull blades pull on the skin and cause cuts. Handle the sheep gently to minimize stress. If you are new to shearing, consider hiring a professional or taking a hands-on course.",
+    "imageName": "sheep_shearing",
+    "category": "Livestock",
+    "readTimeMinutes": 6
+  },
+  {
+    "id": "a007",
+    "title": "Tractor Maintenance 101",
+    "subtitle": "Avoid breakdowns during harvest.",
+    "content": "Your tractor is the workhorse of the farm. Regular maintenance prevents costly downtime when you need it most.\n\nCheck fluids daily. Oil, coolant, and hydraulic fluid levels should be part of your pre-start routine. Grease all zerks according to the manual's schedule—usually every 10 to 50 hours of operation.\n\nInspect tires for wear and proper inflation. Incorrect pressure can lead to soil compaction and increased fuel consumption. Clean air filters regularly, especially in dusty conditions.",
+    "imageName": "tractor_maintenance",
+    "category": "Machinery",
+    "readTimeMinutes": 7
+  },
+  {
+    "id": "a008",
+    "title": "Modern Combine Harvesters",
+    "subtitle": "Technology improving efficiency.",
+    "content": "Modern combines are marvels of engineering. They don't just harvest; they gather data. Yield monitors map your field's clear productivity, showing you exactly which areas are performing well and which aren't.\n\nAuto-steer technology reduces operator fatigue and overlap, saving fuel and time. Self-adjusting concaves and sieves adapt to changing crop conditions on the fly to minimize grain loss.\n\nInvesting in this technology has a high upfront cost but pays off in efficiency and data-driven decision making for the next season.",
+    "imageName": "combine_harvester",
+    "category": "Machinery",
+    "readTimeMinutes": 5
+  },
+  {
+    "id": "a009",
+    "title": "Drone Usage in Farming",
+    "subtitle": "Aerial scouting and analysis.",
+    "content": "Drones are changing the way we scout fields. Instead of walking effectively a small percentage of your acres, you can fly over the entire farm in minutes.\n\nMultispectral cameras can detect plant stress before it's visible to the human eye. This allows for targeted application of fertilizers or pesticides, saving money and reducing environmental impact.\n\nDrones can also be used for livestock monitoring, checking water troughs, and even planting cover crops in hard-to-reach areas.",
+    "imageName": "drone_farming",
+    "category": "Machinery",
+    "readTimeMinutes": 6
+  },
+  {
+    "id": "a010",
+    "title": "Irrigation Systems Compared",
+    "subtitle": "Drip vs. Sprinkler systems.",
+    "content": "Water is a precious resource. Choosing the right irrigation system depends on your crop, soil type, and water availability.\n\nDrip irrigation is the most efficient, delivering water directly to the plant roots. It minimizes evaporation and disease pressure by keeping foliage dry. It is ideal for vegetables and orchards but expensive to install.\n\nSprinkler systems, like center pivots, cover large areas effectively and can be used for frost protection. However, they lose more water to evaporation and wind drift. They are better suited for field crops like corn and wheat.",
+    "imageName": "irrigation_systems",
+    "category": "Water",
+    "readTimeMinutes": 6
+  },
+  {
+    "id": "a011",
+    "title": "Rainwater Harvesting",
+    "subtitle": "Sustainable water collection.",
+    "content": "Harvesting rainwater is a great way to reduce reliance on wells or municipal water. It essentially involves capturing runoff from roofs and storing it in tanks or ponds.\n\nEnsure your catchment surface (the roof) is clean effectively. Install gutters and downspouts that direct water through a filter to remove debris before it enters the storage tank.\n\nThis water is excellent for irrigation as it is free of the salts and minerals often found in groundwater. It can also be used for washing equipment or livestock.",
+    "imageName": "rainwater_harvesting",
+    "category": "Water",
+    "readTimeMinutes": 4
+  },
+  {
+    "id": "a012",
+    "title": "Water Conservation Tips",
+    "subtitle": "Saving water on the farm.",
+    "content": "Conserving water isn't just about equipment; it's about management. Mulching helps retain soil moisture by reducing evaporation and suppressing weeds that compete for water.\n\nSchedule irrigation for early morning or late evening to minimize evaporation loss. Use soil moisture sensors to water only when necessary, rather than on a strict calendar schedule.\n\nBuilding soil organic matter acts like a sponge, holding more water in the root zone effectively. Cover crops are an excellent way to improve soil structure and water-holding capacity.",
+    "imageName": "water_conservation",
+    "category": "Water",
+    "readTimeMinutes": 5
+  },
+  {
+    "id": "a013",
+    "title": "Crop Rotation Strategies",
+    "subtitle": "Breaking pest cycles naturally.",
+    "content": "Crop rotation is one of the oldest and most effective farming techniques. By changing the crop species in a field each season, you disrupt the life cycles of pests and diseases that are host-specific.\n\nFor example, following a heavy nitrogen feeder like corn with a nitrogen-fixing legume like soybeans helps replenish the soil naturally. Root crops can follow shallow-rooted crops to utilize nutrients from different soil depths.\n\nA good rotation plan improves soil health, reduces chemical input costs, and increases biodiversity on the farm.",
+    "imageName": "crop_rotation",
+    "category": "Techniques",
+    "readTimeMinutes": 5
+  },
+  {
+    "id": "a014",
+    "title": "Organic Farming 101",
+    "subtitle": "Transitioning to chemical-free.",
+    "content": "Transitioning to organic farming is a commitment to soil health and ecological balance. It requires a mindset shift from 'treating problems' to 'preventing them'.\n\nBuild fertility through compost, manure, and cover crops instead of synthetic fertilizers. Manage weeds through cultivation, mulching, and flame weeding instead of herbicides.\n\nThe transition period typically takes three years before produce can be certified organic. During this time, documentation is critical. Keep detailed records of all inputs and practices.",
+    "imageName": "organic_farming",
+    "category": "Techniques",
+    "readTimeMinutes": 7
+  },
+  {
+    "id": "a015",
+    "title": "Permaculture Principles",
+    "subtitle": "Designing sustainable systems.",
+    "content": "Permaculture is a design philosophy that mimics patterns found in nature. It emphasizes working with nature rather than against it.\n\nKey principles include 'Observe and Interact', 'Catch and Store Energy', and 'Produce No Waste'. In practice, this looks like planting food forests where trees, shrubs, and groundcovers support each other.\n\nSwales can capture water runoff on slopes. Polycultures (planting multiple species together) increase resilience against pests and weather extremes compared to monocultures.",
+    "imageName": "permaculture",
+    "category": "Techniques",
+    "readTimeMinutes": 6
+  }
+]
