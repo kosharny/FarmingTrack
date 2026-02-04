@@ -115,6 +115,12 @@ struct SearchViewFT: View {
                 case .task(let task):
                     DetailsViewFT(item: .task(task))
                         .toolbar(.hidden, for: .navigationBar)
+                case .weather:
+                    WeatherViewFT()
+                        .toolbar(.hidden, for: .navigationBar)
+                case .market:
+                    MarketViewFT()
+                        .toolbar(.hidden, for: .navigationBar)
                 }
             }
             .navigationDestination(isPresented: $showSettings) {

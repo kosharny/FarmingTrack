@@ -4,12 +4,14 @@ struct WeatherViewFT: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: MainViewModelFT
     
-    let forecast = [
-        WeatherDay(day: "Mon", icon: "sun.max.fill", temp: "24°", high: "26°", low: "18°"),
-        WeatherDay(day: "Tue", icon: "cloud.fill", temp: "21°", high: "23°", low: "16°"),
-        WeatherDay(day: "Wed", icon: "cloud.rain.fill", temp: "18°", high: "20°", low: "15°"),
-        WeatherDay(day: "Thu", icon: "cloud.sun.fill", temp: "22°", high: "24°", low: "17°"),
-        WeatherDay(day: "Fri", icon: "sun.max.fill", temp: "26°", high: "28°", low: "20°")
+    // Timeline Data
+    let timelineEvents = [
+        TimelineEvent(month: "Feb", day: "04", title: "Soil Preparation", type: .preparation, description: "Check soil pH and moisture levels.", status: "In Progress"),
+        TimelineEvent(month: "Feb", day: "15", title: "Order Seeds", type: .preparation, description: "Finalize corn and soybean seed orders.", status: "Upcoming"),
+        TimelineEvent(month: "Mar", day: "01", title: "Machine Maint.", type: .maintenance, description: "Inspect planters and tractors.", status: "Upcoming"),
+        TimelineEvent(month: "Apr", day: "10", title: "Plant Corn", type: .plant, description: "Optimal window begins for corn.", status: "Upcoming"),
+        TimelineEvent(month: "May", day: "05", title: "Plant Soybeans", type: .plant, description: "Start planting if soil temp > 55°F.", status: "Upcoming"),
+        TimelineEvent(month: "Sep", day: "20", title: "Harvest Corn", type: .harvest, description: "Begin harvest when moisture < 25%.", status: "Upcoming")
     ]
     
     var body: some View {
@@ -17,115 +19,120 @@ struct WeatherViewFT: View {
             MainBackgroundFT()
             
             VStack(spacing: 0) {
-                CustomHeaderFT(title: "Weather Forecast", leftIcon: "chevron.left", leftAction: {
-                    dismiss()
-                })
+                CustomHeaderFT(title: "Farming Schedule", showBackButton: true)
                 
                 ScrollView {
-                    VStack(spacing: 25) {
-                        // Current Weather Hero
-                        VStack(spacing: 10) {
-                            Image(systemName: "sun.max.fill")
-                                .font(.system(size: 80))
-                                .foregroundColor(Color.FT.primaryYellow)
-                                .shadow(color: Color.FT.primaryYellow.opacity(0.5), radius: 15)
-                            
-                            Text("24°C")
-                                .font(.system(size: 60, weight: .bold, design: .rounded))
-                                .foregroundColor(.white)
-                            
-                            Text("Sunny - Kyiv, Ukraine")
-                                .font(.title3)
-                                .foregroundColor(Color.FT.textSecondary)
+                    VStack(spacing: 0) {
+                        ForEach(Array(timelineEvents.enumerated()), id: \.element.id) { index, event in
+                            TimelineRowFT(event: event, isLast: index == timelineEvents.count - 1)
                         }
-                        .padding(.top, 30)
-                        
-                        // Today's Stats
-                        HStack(spacing: 20) {
-                            StatBox(icon: "humidity.fill", value: "45%", label: "Humidity")
-                            StatBox(icon: "wind", value: "12 km/h", label: "Wind")
-                            StatBox(icon: "drop.fill", value: "10%", label: "Precip")
-                        }
-                        .padding(.horizontal)
-                        
-                        // 5-Day Forecast
-                        VStack(alignment: .leading, spacing: 15) {
-                            Text("5-Day Forecast")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding(.leading)
-                            
-                            ForEach(forecast) { day in
-                                GameCardFT {
-                                    HStack {
-                                        Text(day.day)
-                                            .font(.headline)
-                                            .frame(width: 50, alignment: .leading)
-                                        
-                                        Spacer()
-                                        
-                                        Image(systemName: day.icon)
-                                            .foregroundColor(day.icon.contains("sun") ? Color.FT.primaryYellow : .white)
-                                            .font(.title2)
-                                        
-                                        Spacer()
-                                        
-                                        HStack(spacing: 10) {
-                                            Text(day.high)
-                                                .fontWeight(.bold)
-                                            Text(day.low)
-                                                .foregroundColor(Color.FT.textSecondary)
-                                        }
-                                        .frame(width: 80, alignment: .trailing)
-                                    }
-                                    .foregroundColor(.white)
-                                }
-                                .padding(.horizontal)
-                            }
-                        }
-                        .padding(.bottom, 30)
                     }
+                    .padding(.top, 20)
+                    .padding(.bottom, 80)
                 }
             }
         }
     }
 }
 
-struct StatBox: View {
-    let icon: String
-    let value: String
-    let label: String
+// MARK: - Data Models
+
+struct TimelineEvent: Identifiable {
+    let id = UUID()
+    let month: String
+    let day: String
+    let title: String
+    let type: EventType
+    let description: String
+    let status: String
+}
+
+enum EventType {
+    case plant, harvest, preparation, maintenance
     
-    var body: some View {
-        VStack(spacing: 8) {
-            Image(systemName: icon)
-                .font(.title3)
-                .foregroundColor(Color.FT.farmGreen)
-            Text(value)
-                .font(.headline)
-                .foregroundColor(.white)
-            Text(label)
-                .font(.caption)
-                .foregroundColor(Color.FT.textSecondary)
+    var color: Color {
+        switch self {
+        case .plant: return Color.FT.farmGreen
+        case .harvest: return Color.FT.primaryYellow
+        case .preparation: return Color.cyan
+        case .maintenance: return Color.gray
         }
-        .frame(maxWidth: .infinity)
-        .padding()
-        .background(Color.FT.cardBackground)
-        .cornerRadius(16)
-        .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.FT.cardBorder, lineWidth: 1)
-        )
+    }
+    
+    var icon: String {
+        switch self {
+        case .plant: return "leaf.fill"
+        case .harvest: return "cart.fill"
+        case .preparation: return "list.clipboard.fill"
+        case .maintenance: return "wrench.and.screwdriver.fill"
+        }
     }
 }
 
-struct WeatherDay: Identifiable {
-    let id = UUID()
-    let day: String
-    let icon: String
-    let temp: String
-    let high: String
-    let low: String
+// MARK: - Components
+
+struct TimelineRowFT: View {
+    let event: TimelineEvent
+    let isLast: Bool
+    
+    var body: some View {
+        HStack(alignment: .top, spacing: 15) {
+            // Date Column
+            VStack(spacing: 4) {
+                Text(event.month.uppercased())
+                    .font(.caption2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.FT.textSecondary)
+                Text(event.day)
+                    .font(.title3)
+                    .fontWeight(.black)
+                    .foregroundColor(.white)
+            }
+            .frame(width: 50)
+            .padding(.top, 4)
+            
+            // Timeline Line
+            VStack(spacing: 0) {
+                Circle()
+                    .fill(event.type.color)
+                    .frame(width: 12, height: 12)
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white.opacity(0.2), lineWidth: 4)
+                    )
+                
+                if !isLast {
+                    Rectangle()
+                        .fill(Color.white.opacity(0.1))
+                        .frame(width: 2)
+                        .frame(maxHeight: .infinity)
+                }
+            }
+            .padding(.top, 12)
+            
+            // Event Card
+            GameCardFT {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack {
+                        Image(systemName: event.type.icon)
+                            .foregroundColor(event.type.color)
+                        Text(event.title)
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                    
+                    Text(event.description)
+                        .font(.subheadline)
+                        .foregroundColor(Color.FT.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding()
+            }
+            .padding(.bottom, 20)
+        }
+        .padding(.horizontal)
+    }
 }
 
 #Preview {
