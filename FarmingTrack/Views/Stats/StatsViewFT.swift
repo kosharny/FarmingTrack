@@ -34,10 +34,10 @@ struct StatsViewFT: View {
                             
                             // Grid stats
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                                StatBox(title: "Tasks Done", value: "\(viewModel.completedTasksCount)", icon: "checkmark.seal.fill", color: Color.FT.farmGreen)
-                                StatBox(title: "Articles Read", value: "\(viewModel.readArticlesCount)", icon: "book.fill", color: Color.FT.softOrange)
-                                StatBox(title: "Favorites", value: "\(viewModel.favoriteArticleIds.count + viewModel.favoriteTaskIds.count)", icon: "heart.fill", color: Color.FT.accentRed)
-                                StatBox(title: "Level", value: "\(viewModel.totalXP / 500 + 1)", icon: "crown.fill", color: Color.FT.primaryYellow)
+                                StatsStatBox(title: "Tasks Done", value: "\(viewModel.completedTasksCount)", icon: "checkmark.seal.fill", color: Color.FT.farmGreen)
+                                StatsStatBox(title: "Articles Read", value: "\(viewModel.readArticlesCount)", icon: "book.fill", color: Color.FT.softOrange)
+                                StatsStatBox(title: "Favorites", value: "\(viewModel.favoriteArticleIds.count + viewModel.favoriteTaskIds.count)", icon: "heart.fill", color: Color.FT.accentRed)
+                                StatsStatBox(title: "Level", value: "\(viewModel.totalXP / 500 + 1)", icon: "crown.fill", color: Color.FT.primaryYellow)
                             }
                             
                             // Activity Graph
@@ -81,7 +81,7 @@ struct StatsViewFT: View {
     }
 }
 
-struct StatBox: View {
+private struct StatsStatBox: View {
     let title: String
     let value: String
     let icon: String
@@ -91,9 +91,9 @@ struct StatBox: View {
         GameCardFT {
             VStack(spacing: 12) {
                 Circle()
-                    .fill(color.opacity(0.2))
-                    .frame(width: 50, height: 50)
-                    .overlay(Image(systemName: icon).foregroundColor(color))
+                .fill(color.opacity(0.2))
+                .frame(width: 50, height: 50)
+                .overlay(Image(systemName: icon).foregroundColor(color))
                 
                 Text(value)
                     .font(.title)

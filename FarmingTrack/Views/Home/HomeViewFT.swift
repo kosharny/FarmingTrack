@@ -16,21 +16,31 @@ struct HomeViewFT: View {
                     ScrollView {
                         VStack(spacing: 20) {
                             // Banner / Update
-                            GameCardFT {
-                                HStack {
-                                    VStack(alignment: .leading) {
-                                        Text("Welcome Back!")
-                                            .font(.title2)
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.white)
-                                        Text("Check your daily tasks.")
-                                            .foregroundColor(.white.opacity(0.8))
+                            // Banner / Update
+                            GameCardFT(contentPadding: 0) {
+                                ZStack {
+                                    // Background Image
+                                    Image("sunny_farm_background")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(height: 160)
+                                        .clipped()
+                                        .overlay(Color.black.opacity(0.3)) // Dark overlay for text readability
+                                    
+                                    HStack {
+                                        VStack(alignment: .leading) {
+                                            Text("Welcome Back!")
+                                                .font(.title2)
+                                                .fontWeight(.bold)
+                                                .foregroundColor(.white)
+                                            Text("Check your daily tasks.")
+                                                .foregroundColor(.white.opacity(0.9))
+                                        }
+                                        Spacer()
                                     }
-                                    Spacer()
-                                    Image(systemName: "sun.max.fill")
-                                        .font(.system(size: 40))
-                                        .foregroundColor(Color.FT.primaryYellow)
+                                    .padding()
                                 }
+                                .frame(height: 160)
                             }
                             
                             // Categories - Navigation
@@ -67,30 +77,30 @@ struct HomeViewFT: View {
                             }
                             
                             // Tools & Insights
-                            SectionHeaderFT(title: "Tools & Insights") {}
+                            SectionHeaderFT(title: "Tools & Insights")
                             
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 15) {
-                                    NavigationLink(value: AppRouteFT.weather) {
-                                        HomeInteractionCard(
-                                            title: "Weather",
-                                            subtitle: "5-Day Forecast",
-                                            icon: "cloud.sun.fill",
-                                            color: Color.FT.primaryYellow
-                                        )
-                                    }
-                                    
-                                    NavigationLink(value: AppRouteFT.market) {
-                                        HomeInteractionCard(
-                                            title: "Markets",
-                                            subtitle: "Live Prices",
-                                            icon: "chart.bar.fill",
-                                            color: Color.FT.farmGreen
-                                        )
-                                    }
+                            HStack(spacing: 15) {
+                                NavigationLink(value: AppRouteFT.weather) {
+                                    HomeInteractionCard(
+                                        title: "Weather",
+                                        subtitle: "Farming Schedule",
+                                        icon: "calendar",
+                                        color: Color.FT.primaryYellow
+                                    )
                                 }
-                                .padding(.horizontal)
+                                .frame(maxWidth: .infinity)
+                                
+                                NavigationLink(value: AppRouteFT.market) {
+                                    HomeInteractionCard(
+                                        title: "Markets",
+                                        subtitle: "Sales Advice",
+                                        icon: "chart.bar.fill",
+                                        color: Color.FT.farmGreen
+                                    )
+                                }
+                                .frame(maxWidth: .infinity)
                             }
+                            .padding(.horizontal)
                         }
                         .padding()
                         .padding(.bottom, 80) // Space for TabBar
@@ -150,7 +160,7 @@ struct HomeViewFT: View {
                             .foregroundColor(Color.FT.textSecondary)
                     }
                 }
-                .frame(width: 120, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
     }
