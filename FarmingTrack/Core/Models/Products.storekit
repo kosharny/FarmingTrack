@@ -25,8 +25,8 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "premium_theme_lush",
-      "referenceName" : "Premium Theme Lush",
+      "productID" : "premium_theme_deep_green",
+      "referenceName" : "Premium Theme Deep Green",
       "type" : "NonConsumable"
     },
     {
@@ -40,8 +40,8 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "premium_theme_sunset",
-      "referenceName" : "Premium Theme Sunset",
+      "productID" : "premium_theme_golden_hour",
+      "referenceName" : "Premium Theme Golden Hour",
       "type" : "NonConsumable"
     }
   ],

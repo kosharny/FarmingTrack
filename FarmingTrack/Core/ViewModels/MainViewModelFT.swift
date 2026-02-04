@@ -46,8 +46,8 @@ class MainViewModelFT: ObservableObject {
         var productID: String? {
             switch self {
             case .classic: return nil
-            case .lush: return "premium_theme_lush"
-            case .sunset: return "premium_theme_sunset"
+            case .lush: return "premium_theme_deep_green"
+            case .sunset: return "premium_theme_golden_hour"
             }
         }
     }
