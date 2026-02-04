@@ -65,6 +65,32 @@ struct HomeViewFT: View {
                                     TaskRowFT(task: task)
                                 }
                             }
+                            
+                            // Tools & Insights
+                            SectionHeaderFT(title: "Tools & Insights") {}
+                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 15) {
+                                    NavigationLink(value: AppRouteFT.weather) {
+                                        HomeInteractionCard(
+                                            title: "Weather",
+                                            subtitle: "5-Day Forecast",
+                                            icon: "cloud.sun.fill",
+                                            color: Color.FT.primaryYellow
+                                        )
+                                    }
+                                    
+                                    NavigationLink(value: AppRouteFT.market) {
+                                        HomeInteractionCard(
+                                            title: "Markets",
+                                            subtitle: "Live Prices",
+                                            icon: "chart.bar.fill",
+                                            color: Color.FT.farmGreen
+                                        )
+                                    }
+                                }
+                                .padding(.horizontal)
+                            }
                         }
                         .padding()
                         .padding(.bottom, 80) // Space for TabBar
@@ -91,7 +117,40 @@ struct HomeViewFT: View {
                 case .task(let task):
                     DetailsViewFT(item: .task(task))
                         .toolbar(.hidden, for: .navigationBar)
+                case .weather:
+                    WeatherViewFT()
+                        .toolbar(.hidden, for: .navigationBar)
+                case .market:
+                    MarketViewFT()
+                        .toolbar(.hidden, for: .navigationBar)
                 }
+            }
+        }
+    }
+    
+    struct HomeInteractionCard: View {
+        let title: String
+        let subtitle: String
+        let icon: String
+        let color: Color
+        
+        var body: some View {
+            GameCardFT {
+                VStack(alignment: .leading, spacing: 12) {
+                    Image(systemName: icon)
+                        .font(.title)
+                        .foregroundColor(color)
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(title)
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        Text(subtitle)
+                            .font(.caption)
+                            .foregroundColor(Color.FT.textSecondary)
+                    }
+                }
+                .frame(width: 120, alignment: .leading)
             }
         }
     }

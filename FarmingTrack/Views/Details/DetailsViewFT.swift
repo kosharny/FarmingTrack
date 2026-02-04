@@ -116,7 +116,7 @@ struct DetailsViewFT: View {
                     }
                 }
                 
-                Spacer(minLength: 100)
+                Spacer(minLength: 40)
             }
             .padding()
         }

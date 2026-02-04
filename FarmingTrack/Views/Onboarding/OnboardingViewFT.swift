@@ -65,36 +65,47 @@ struct OnboardingSlide: View {
     let title: String
     let description: String
     
+    @Environment(\.verticalSizeClass) private var verticalSizeClass
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
+    var isCompactHeight: Bool {
+        UIScreen.main.bounds.height < 700
+    }
+
     var body: some View {
-        VStack(spacing: 40) {
-            // Using asset image instead of system icon
+        VStack(spacing: isCompactHeight ? 20 : 40) {
+
             Image(imageName)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxHeight: 300)
+                .scaledToFill()
+                .frame(maxHeight: isCompactHeight ? 200 : 300)
                 .cornerRadius(20)
                 .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 5)
-                .padding()
-                // Fallback for dev if asset missing
+                .padding(.horizontal)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.white.opacity(0.2), lineWidth: 2)
                 )
-            
-            VStack(spacing: 16) {
+
+            VStack(spacing: 12) {
                 Text(title)
-                    .font(.largeTitle)
+                    .font(isCompactHeight ? .title : .largeTitle)
                     .fontWeight(.black)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                
+                    .minimumScaleFactor(0.85)
+                    .lineLimit(2)
+
                 Text(description)
-                    .font(.title3)
+                    .font(isCompactHeight ? .body : .title3)
                     .foregroundColor(.white.opacity(0.8))
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal)
+                    .minimumScaleFactor(0.9)
+                    .lineLimit(3)
+                    .padding(.horizontal, isCompactHeight ? 8 : 16)
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, isCompactHeight ? 12 : 24)
     }
 }

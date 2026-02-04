@@ -7,4 +7,6 @@ enum AppRouteFT: Hashable {
     case taskList
     case article(ArticleModelFT)
     case task(TaskModelFT)
+    case weather
+    case market
 }
