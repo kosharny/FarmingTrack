@@ -22,6 +22,7 @@ struct SettingsViewFT: View {
                         aboutSection
                     }
                     .padding()
+                    Spacer(minLength: 100)
                 }
             }
             .navigationBarBackButtonHidden(true) // We use custom header
